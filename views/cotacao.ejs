@@ -1,0 +1,9 @@
+<%- include('header') %>
+<% if(error) { %>
+    <h1>Valores inválidos</h1> 
+<% } else { %>
+    <h2>Dollar value: R$<%= cotacao %></h2> 
+    <h2>Quantity of dollars: $<%= quantidade %></h2> 
+    <h2>BRL amount: R$<%= conversao %></h2> 
+<% } %>
+<%- include('footer') %>
